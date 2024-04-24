@@ -1,11 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
 
 const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="container d-flex justify-content-center align-items-center vh-100 ">
+    <>
+    <Header/>
+    <div className="container d-flex justify-content-center align-items-center vh-70" >
       <div className="text-center">
         <h1 className="display-4">Welcome to QuizApp!</h1>
         <p className="lead">
@@ -17,6 +20,7 @@ const Home = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 
